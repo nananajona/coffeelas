@@ -1,0 +1,232 @@
+ <!DOCTYPE html>
+ <style>
+
+.reviews {
+  width: 800;
+  display: flex;
+}
+
+.review {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  flex-basis: calc(50% - 40px);
+}
+
+.review h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 16px;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.review p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+button {
+  background-color: #b6a08a;
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #70645c;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.review-form label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.review-form input:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 3px #0099ff;
+}
+
+.review-form button {
+  background-color: #0099ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: #0080ff;
+}
+
+
+</style>
+ <head>
+	<title>Reviews</title>
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+      <img src="img/logo.png" class="is-flex" alt="icafilas">
+      </a>
+    </div>
+  <div class="menu">
+    <div class="menu-item">Home
+      <div class="dropdown-content">
+        <a href="about.html">Our Story</a>
+        <a href="faq.html">FAQ</a>
+        <a href="how.html">How To Use</a>
+      </div>
+    </div>
+    <div class="menu-item">Shop Now
+      <div class="dropdown-content">
+        <a href="product1.html">Reusable Coffee Capsules</a>
+        <a href="product2.html">Accessories</a>
+      </div>
+    </div>
+    <div class="menu-item"><a href="whyus.html">Why Us</a>
+    </div>
+    <div class="menu-item"><a href="reviews.html">Reviews
+    </div>
+    <div class="menu-item"><a href="blog.html">Blog
+    </div>
+    <div class="menu-item"><a href="contact.html">Contact
+    </div>
+    <div class="account">
+  <a href="acc.html"><img src="img/account.png" alt="Account Icon"></a>
+  </a>
+	</div>
+</div>
+</header> 
+<body>
+  <div style="overflow: auto;">
+  <div style="float: left; width: 50%;">
+    <section class="reviews" style="padding: 20px;" >
+      <div class="review">
+        <h2> Amazing Product  ✦✦✦✦✦ </h2>
+        <p class="author">- Polly Smith </p>
+        <p>This was my first time purchasing reusable capsules and no regrets! I love how miniscule and eco-friendly it is! </p>
+      </div>
+      <div class="review">
+        <h2> Good Quality! ✦✦✦✦✦ </h2>
+        <p class="author">- Rebecca Wilson </p>
+        <p> Recommended for anyone who owns a coffee machine, this is a life-changer! </p>
+      </div>
+      <div class="review">
+        <h2> Top-notch Customer Service  ✦✦✦✦✦ </h2>
+        <p class="author">- John Doe </p>
+        <p> Had to make changes to my order and the customer service replied to my email almost immediately and settled it for me! Was a great experience :) </p>
+      </div>
+      </section>
+    <button id="more-reviews-btn" style="margin-left:40px ;">Click for More</button>
+  </br></br>
+  </div>
+  <div style="float: right; width: 50%;">
+    <form class="review-form" style="margin-right: 70px; margin-top: 40px;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Select a rating</option>
+        <option value="5">5 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="2">2 Stars</option>
+        <option value="1">1 Star</option>
+      </select>
+
+      <label for="review">Review:</label>
+      <textarea id="review" name="review" required></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
+<footer>
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+</div>
+
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <h4>Contact Us</h4>
+          Guangzhou Metropolitan Plaza</br>
+          Tianhe District, Guangdong Province, China</br>
+          Phone: +86 20 3739 2490</br>
+          Email: sales01@belr.us</br>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <h4>Follow Us</h4>
+        <ul class="social-icons">
+          <a href="https://www.facebook.com/iCafilascoffeecapsule"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/icafilascoffee/?fbclid=IwAR04L3iwrZoHaYm0ixBTg0U4thj05A1qypVCVn12CIZDaqP3cr6lVAhO1-4"><i class="fa fa-instagram"></i></a>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <h4>Legal</h4>
+        <ul>
+          <a href="pdpa.html">Privacy Policy</a>
+        </ul>
+      </div>
+    </div>
+  </div>
+ </footer>
+</html>
